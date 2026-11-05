@@ -1,0 +1,34 @@
+# Nhật ký hoàn thành dự án
+
+Thư mục này lưu các mốc hoàn thành đã được kiểm chứng của dự án. Mỗi phần quan trọng chỉ được tạo một file mới khi công việc đã có bằng chứng; không thay thế bằng nhận định hoặc kết quả dự kiến.
+
+## Quy ước đặt tên
+
+```text
+NN-ten-giai-doan.md
+```
+
+Ví dụ: `03-elk-deployment.md` chỉ được tạo sau khi Elasticsearch, Logstash và Kibana đã chạy và được kiểm tra thực tế.
+
+## Nội dung bắt buộc của một completion record
+
+1. Mục tiêu và phạm vi đã thực hiện.
+2. Cấu hình hoặc quyết định kỹ thuật thực tế.
+3. Các lệnh/kiểm tra đã chạy và kết quả.
+4. Bằng chứng: ảnh, log đã lọc dữ liệu nhạy cảm, hoặc liên kết dashboard.
+5. Vấn đề gặp phải và cách khắc phục.
+6. Hạn chế còn lại và bước kế tiếp.
+
+## Các mốc dự kiến
+
+| File | Mốc | Điều kiện tạo |
+| --- | --- | --- |
+| `01-repository-and-design.md` | Repository và thiết kế | Đã khảo sát và commit tài liệu |
+| `02-ubuntu-vm.md` | Ubuntu SIEM VM | VM được tạo, boot và network được kiểm tra |
+| `03-elk-deployment.md` | ELK runtime | Elasticsearch, Logstash, Kibana health check thành công |
+| `04-windows-log-collection.md` | Windows collection | Winlogbeat gửi event thực tế đến Elasticsearch |
+| `05-pfsense-log-collection.md` | Firewall collection | pfSense Syslog được parse từ dữ liệu thực tế |
+| `06-detection-and-dashboard.md` | Detection và dashboard | Rule/dashboard có bằng chứng runtime |
+| `07-testing-and-evaluation.md` | Kiểm thử và đánh giá | Sáu kịch bản và số liệu thực nghiệm hoàn tất |
+
+Các file này là nguồn dữ liệu cho báo cáo Word và slide, không phải bản báo cáo cuối cùng.

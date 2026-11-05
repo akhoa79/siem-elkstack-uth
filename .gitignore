@@ -1,0 +1,64 @@
+# =============================================================================
+# .gitignore - SIEM ELK Stack UTH
+# Rule: never commit passwords, API keys, private certificates, logs, or data.
+# =============================================================================
+
+# Environment and sensitive variables
+.env
+.env.local
+*.env
+!.env.example
+
+# Docker overrides
+docker/.env
+docker/overrides.yml
+
+# Elasticsearch data and private certificates
+config/elasticsearch/certs/
+config/elasticsearch/data/
+elasticsearch-data/
+certs/
+*.pem
+*.crt
+*.key
+*.p12
+*.jks
+
+# Log files
+*.log
+logs/
+logstash/logs/
+kibana/logs/
+
+# Kibana saved-object exports may contain sensitive investigation data.
+kibana-export.ndjson
+*.ndjson
+
+# Operating-system generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python and script cache
+__pycache__/
+*.py[cod]
+$py.class
+*.venv
+venv/
+
+# Windows build artifacts
+*.exe
+*.msi
+*.iso
+
+# Temporary and scratch files
+scratch/
+*.tmp
+*.bak
