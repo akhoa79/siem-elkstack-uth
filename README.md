@@ -19,7 +19,8 @@ Repository preparation, Ubuntu SIEM VM, dual-NIC networking, SSH connectivity,
 Docker Engine/Compose, and the secured Elastic Stack runtime are complete.
 Windows Server events are collected through Winlogbeat over TLS, and pfSense
 Syslog is collected on the isolated lab network. Dashboard and alert work is
-the next milestone.
+partially complete: the Kibana dashboard has been verified with runtime data;
+detection rules and alert testing are the next milestone.
 
 ## Proposed data flow
 
