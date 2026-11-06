@@ -15,7 +15,11 @@ This is a controlled academic lab. It is not designed for Internet exposure or p
 
 ## Current status
 
-Repository preparation, Ubuntu SIEM VM, dual-NIC networking, SSH connectivity, Docker Engine/Compose, and the secured Elastic Stack runtime are complete. Windows log shipper, pfSense configuration, dashboards, and alerts have not yet been deployed.
+Repository preparation, Ubuntu SIEM VM, dual-NIC networking, SSH connectivity,
+Docker Engine/Compose, and the secured Elastic Stack runtime are complete.
+Windows Server events are collected through Winlogbeat over TLS, and pfSense
+Syslog is collected on the isolated lab network. Dashboard and alert work is
+the next milestone.
 
 ## Proposed data flow
 

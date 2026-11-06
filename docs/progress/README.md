@@ -25,11 +25,9 @@ Ví dụ: `03-elk-deployment.md` chỉ được tạo sau khi Elasticsearch, Log
 | --- | --- | --- |
 | `01-repository-and-design.md` | Repository và thiết kế | Đã khảo sát và commit tài liệu |
 | `02-ubuntu-vm.md` | Ubuntu SIEM VM | VM được tạo, boot và network được kiểm tra |
-| `03-elk-deployment.md` | ELK runtime | Elasticsearch, Logstash, Kibana health check thành công |
-| `04-windows-log-collection.md` | Windows collection | Winlogbeat gửi event thực tế đến Elasticsearch |
-| `05-pfsense-log-collection.md` | Firewall collection | pfSense Syslog được parse từ dữ liệu thực tế |
-| `06-detection-and-dashboard.md` | Detection và dashboard | Rule/dashboard có bằng chứng runtime |
-| `07-testing-and-evaluation.md` | Kiểm thử và đánh giá | Sáu kịch bản và số liệu thực nghiệm hoàn tất |
+| `07-pfsense-syslog.md` | Firewall collection | pfSense Syslog được parse từ dữ liệu thực tế |
+| `08-detection-and-dashboard.md` | Detection và dashboard | Rule/dashboard có bằng chứng runtime |
+| `09-testing-and-evaluation.md` | Kiểm thử và đánh giá | Sáu kịch bản và số liệu thực nghiệm hoàn tất |
 
 ## Mốc đã hoàn thành
 
@@ -41,5 +39,6 @@ Ví dụ: `03-elk-deployment.md` chỉ được tạo sau khi Elasticsearch, Log
 | `04-docker-engine.md` | Docker Engine | Docker Engine và Docker Compose đã sẵn sàng trên Ubuntu |
 | `05-elastic-stack-runtime.md` | Elastic Stack runtime | Elasticsearch, Kibana và Logstash healthy |
 | `06-windows-winlogbeat.md` | Windows log collection | Winlogbeat TLS gửi sự kiện thực tế và Kibana Discover hiển thị 29 documents |
+| `07-pfsense-syslog.md` | pfSense Syslog collection | pfSense gửi DHCP và Firewall `filterlog` thực tế qua UDP, Kibana Discover hiển thị dữ liệu |
 
 Các file này là nguồn dữ liệu cho báo cáo Word và slide, không phải bản báo cáo cuối cùng.
