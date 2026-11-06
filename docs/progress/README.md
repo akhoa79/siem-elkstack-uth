@@ -42,5 +42,6 @@ Ví dụ: `03-elk-deployment.md` chỉ được tạo sau khi Elasticsearch, Log
 | `06-windows-winlogbeat.md` | Windows log collection | Winlogbeat TLS gửi sự kiện thực tế và Kibana Discover hiển thị 29 documents |
 | `07-pfsense-syslog.md` | pfSense Syslog collection | pfSense gửi DHCP và Firewall `filterlog` thực tế qua UDP, Kibana Discover hiển thị dữ liệu |
 | `08-security-dashboard.md` | Security dashboard | Dashboard Kibana hiển thị pfSense firewall block và Windows failed logon thực tế |
+| `09-detection-rules.md` | Detection rules | Hai Elasticsearch query rule đã tạo, kích hoạt và có alert runtime trong Kibana |
 
 Các file này là nguồn dữ liệu cho báo cáo Word và slide, không phải bản báo cáo cuối cùng.
