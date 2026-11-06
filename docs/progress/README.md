@@ -31,4 +31,15 @@ Ví dụ: `03-elk-deployment.md` chỉ được tạo sau khi Elasticsearch, Log
 | `06-detection-and-dashboard.md` | Detection và dashboard | Rule/dashboard có bằng chứng runtime |
 | `07-testing-and-evaluation.md` | Kiểm thử và đánh giá | Sáu kịch bản và số liệu thực nghiệm hoàn tất |
 
+## Mốc đã hoàn thành
+
+| File | Mốc | Bằng chứng chính |
+| --- | --- | --- |
+| `01-repository-and-design.md` | Repository và thiết kế | Thiết kế, phạm vi và Git baseline đã được ghi nhận |
+| `02-ubuntu-vm.md` | Ubuntu SIEM VM | VM, hai network interface và SSH đã kiểm tra |
+| `03-elastic-deployment-manifests.md` | Elastic deployment manifests | Compose, TLS và cấu hình service đã hoàn tất |
+| `04-docker-engine.md` | Docker Engine | Docker Engine và Docker Compose đã sẵn sàng trên Ubuntu |
+| `05-elastic-stack-runtime.md` | Elastic Stack runtime | Elasticsearch, Kibana và Logstash healthy |
+| `06-windows-winlogbeat.md` | Windows log collection | Winlogbeat TLS gửi sự kiện thực tế và Kibana Discover hiển thị 29 documents |
+
 Các file này là nguồn dữ liệu cho báo cáo Word và slide, không phải bản báo cáo cuối cùng.

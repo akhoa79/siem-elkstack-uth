@@ -1,0 +1,28 @@
+# Winlogbeat 9.5.6 -- Windows Server collector for the isolated SIEM lab.
+# Copy to C:/Program Files/Winlogbeat/winlogbeat.yml after installing Winlogbeat.
+
+winlogbeat.event_logs:
+  - name: Security
+    event_id: 4624, 4625, 4634, 4648, 4672, 4720, 4728, 4732, 4740
+  - name: System
+  - name: Application
+
+processors:
+  - add_host_metadata:
+      when.not.contains.tags: forwarded
+
+output.logstash:
+  # Windows hosts file maps logstash to 192.168.109.10.
+  # The certificate includes logstash as a DNS SAN, so full verification works.
+  hosts: ["logstash:5044"]
+  ssl:
+    certificate_authorities: ["C:/Program Files/Winlogbeat/certs/ca.crt"]
+    verification_mode: full
+
+logging.level: info
+logging.to_files: true
+logging.files:
+  path: C:/Program Files/Winlogbeat-Data/logs
+  name: winlogbeat
+  keepfiles: 7
+  permissions: 0640
